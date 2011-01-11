@@ -84,9 +84,29 @@ body,td,textarea {
 	background:#FFF;
 	border:0;
 }
-button {
+
+
+#login {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	height: 1px;
+}
+#login .overlay {
+	width: 50%;
+	background: rgba(0,0,0,0.3);
+	-moz-border-radius: 3px;
+	margin: -40px auto 0px auto;
+	height: 80px;
+}
+#login .wrap {
+	padding: 25px;
+	text-align: center;
+}
+
+
+#button {
 	display:inline-block;
-	border: 2px solid #CCC;
 }
 
 

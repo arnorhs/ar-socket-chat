@@ -18,6 +18,15 @@
 			<textarea></textarea>
 		</div>
 	</div>
-</div>
+</div><!-- #mainwrap -->
+<div id="login">
+	<div class="overlay">
+		<div class="wrap">
+			<label for="username">Username:</label>
+			<input type="text" id="username" />
+			<button>OK</button>
+		</div>
+	</div>
+</div><!-- #login -->
 </body>
 </html>
