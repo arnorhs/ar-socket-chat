@@ -1,0 +1,130 @@
+
+/************************************************************************************
+	Eric Meyer's Reset Revisited
+	http://meyerweb.com/eric/tools/css/reset/ 
+	v2.0b1 | 201101 
+	NOTE: WORK IN PROGRESS - USE WITH CAUTION AND TEST WITH ABANDON
+************************************************************************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none;}
+/* remember to highlight inserts somehow! */
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+table {border-collapse: collapse;border-spacing: 0;}
+/* ég bætti við */
+a:focus {outline: 1px dotted #BBB;}
+a:hover {outline: 0;}
+
+/************************************************************************************
+	Base style
+************************************************************************************/
+
+
+
+
+body,td,textarea {
+	font-family: "arial",helvetica,sans;
+}
+#mainwrap {
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+}
+#box {
+
+	padding-bottom: 30px;
+	padding: 0 5px 30px 5px;
+	
+}
+#controls {
+	position: fixed;
+	bottom: 0px;
+	height: 40px;
+	width: 100%; 
+	background: #CCC;
+}
+#box .msg {
+	white-space: pre;
+}
+#controls .controls_wrap {
+	padding: 4px 4px;
+}
+
+#controls textarea {
+	height: 30px;
+	display:inline-block;
+	padding: 3px;
+	width: 100%;
+	background:#FFF;
+	border:0;
+}
+button {
+	display:inline-block;
+	border: 2px solid #CCC;
+}
+
+
+
+/*
+
+css style templates - af því ég nenni ekki alltaf að googla og copy-peista
+	
+Border radius - http://border-radius.com/
+	
+	-webkit-border-radius: 2px;
+	-webkit-border-bottom-left-radius: 4px;
+	-moz-border-radius: 2px;
+	-moz-border-radius-bottomleft: 4px;
+	border-radius: 2px;
+	border-bottom-left-radius: 4px;
+	
+	IE: http://code.google.com/p/curved-corner/
+	
+	
+CSS Gradient - http://www.colorzilla.com/gradient-editor/
+		
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#000000');
+	background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#000)); 
+	background: -moz-linear-gradient(top,  #ccc,  #000); 
+	
+	
+	
+Box shadow - http://dimox.net/cross-browser-css3-box-shadow/ (með info fyrir IE)
+
+	-moz-box-shadow: 10px 10px 10px #000; 
+	-webkit-box-shadow: 10px 10px 10px #000; 
+	box-shadow: 10px 10px 10px #000; 
+	
+	IE: http://code.google.com/p/box-shadow/
+	
+	
+	
+*/
+
+
