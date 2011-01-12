@@ -22,6 +22,8 @@
 <div id="login">
 	<div class="overlay">
 		<div class="wrap">
+			<h2>Welcome to ar-socket-chat</h2>
+			<p>Please type a nick name for yourself.</p>
 			<label for="username">Username:</label>
 			<input type="text" id="username" />
 			<button>OK</button>

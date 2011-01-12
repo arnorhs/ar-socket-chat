@@ -69,9 +69,27 @@ body,td,textarea {
 	width: 100%; 
 	background: #CCC;
 }
-#box .msg {
+
+
+
+#box .entry {
 	white-space: pre;
+	clear:both;
+	after: "";
 }
+#box .entry .user {
+	width: 120px;
+	float:left;
+}
+#box .entry .txt {
+	float:left;
+	width:auto;
+}
+
+
+
+
+
 #controls .controls_wrap {
 	padding: 4px 4px;
 }
@@ -94,16 +112,29 @@ body,td,textarea {
 }
 #login .overlay {
 	width: 50%;
-	background: rgba(0,0,0,0.3);
+	min-width: 400px;
+	background: rgba(0,0,0,0.1);
 	-moz-border-radius: 3px;
-	margin: -40px auto 0px auto;
-	height: 80px;
+	margin: -115px auto 0px auto;
+	height: 230px;
 }
 #login .wrap {
-	padding: 25px;
+	padding: 45px;
 	text-align: center;
+	text-shadow: 0px 1px 0px #FFF;
 }
-
+#login h2 {
+	font-size: 2em;
+}
+#login p {
+	margin: 1em 0;
+}
+#login #username {
+	border:1px solid #CCC;
+	padding:2px;
+	width: 100px;
+	
+}
 
 #button {
 	display:inline-block;
