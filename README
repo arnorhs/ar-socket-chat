@@ -1,8 +1,0 @@
-This is a simple test project to test creating group chat using socket.io
-
-It includes the server code for running the node.js server as well as the client side chat app.
-
-The /www folder is pure html stuff and is intended to be served using any web server. I was using apache.
-
-However the node code will start its own server on port 8080 which the client side code in /www will connect to (and fetch socket.io client side js library)
-
