@@ -22,7 +22,7 @@ function connect_to_chat_server () {
 		return false;
 	}
 
-	socket = new io.Socket("localhost:8080"); 
+	socket = new io.Socket("localhost", {port : 8080}); 
 	socket.connect();
 	socket.on('connect', function(){ addmsg('connect','somebody connected'); }) 
 	socket.on('message', function(data){
@@ -45,7 +45,7 @@ function connect_to_chat_server () {
 
 function addmsg (type, socket_message) {
 
-
+	// maybe we should be sanitizing here as well... not just on the server...
 	if (typeof socket_message == 'string') {
 		var username = '';
 		var txt = socket_message;
@@ -53,6 +53,8 @@ function addmsg (type, socket_message) {
 		var username = socket_message.username;
 		var txt = socket_message.txt;	
 	}
+	
+
 	
 
 	if (txt.length < 1) {
@@ -84,8 +86,19 @@ function generatename () {
 
 function sendmsg () {
 	var v = $('textarea').val();
-	var socket_message = {'txt':v,'username':user.username};
+	var socket_message = {
+		'txt':v,
+		'username': user.username
+	};
 	socket.send(socket_message);
+	
+	// we'll need to encode it before we show it to the user
+	
+	//console.log(socket_message);	
+	// nothing seems to be happening here - need to contact the author... ?
+	socket_message.username = sanitize(socket_message.username).entityEncode();
+	//console.log(socket_message);
+	
 	$('textarea').val('');
 	addmsg('msg',socket_message);
 	$(window).scrollTop(9999999);

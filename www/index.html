@@ -3,10 +3,18 @@
 <!--[if (gt IE 6)|!(IE)]><!--><html lang="en"><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
+	
+	<!-- Served by socket.io itself -->	
 	<script src="http://localhost:8080/socket.io/socket.io.js"></script> 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-	<script src="ar-socket-chat-client.js"></script>
+	<script src="js-lib/jquery-1.4.4.min.js"></script>
+	
+	<!-- https://github.com/chriso/node-validator/raw/master/validator-min.js -->
+	<script src="js-lib/validator-min.js"></script> 
+	
+	<!-- Our main JS client side file + stylesheet -->
+	<script src="ar-socket-chat-client.js"></script>		
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	
 	<!-- Modernizr for feature detection of CSS3 and HTML5; must be placed in the "head" -->
 	<script src="js-lib/modernizr-1.6.min.js"></script>
 </head>
@@ -18,7 +26,7 @@
 			<textarea></textarea>
 		</div>
 	</div>
-</div><!-- #mainwrap -->
+</div><!-- #mainwrap --> 
 <div id="login">
 	<div class="overlay">
 		<div class="wrap">
